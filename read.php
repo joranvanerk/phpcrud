@@ -19,6 +19,10 @@ $recordss = "";
       <a href='./update.php?id=" . $records["id"] ."'>
         <img src='./img/icons/pen.png' alt='edit'</td>
         </a>
+        <td>
+        <a href='./delete.php?id=" . $records["id"] ."'>
+        <img src='./img/icons/b_drop.png' alt='delete'</td>
+        </a>
     </tr>";
   }
 
@@ -62,6 +66,7 @@ $recordss = "";
             <th scope="col">Wachtwoord</th>
             <th scope="col">Leeftijd</th>
             <th scope="col">Lengte</th>
+            <th scope="col"></th>
             <th scope="col"></th>
             </tr>
         </thead>

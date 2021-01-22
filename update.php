@@ -66,7 +66,7 @@
               <input type="password" name="wachtwoord" class="form-control" id="wachtwoord" aria-describedby="infixhelp" placeholder="Invoer wachtwoord" value="<?php echo $record["wachtwoord"]; ?>">
             </div>
             <input type="hidden" value="<?php echo $id; ?>" name="id">
-            <button type="submit" class="btn btn-primary">Versturen</button>
+            <button type="submit" class="btn btn-primary">Opslaan</button>
           </form>
         <div class="col6"></div>
     </div>

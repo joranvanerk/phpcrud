@@ -23,18 +23,24 @@
 
     include("./connect_db.php");
 
-    $voornaam = $_POST["voornaam"];
-    $email = $_POST["email"];
-    $achternaam = $_POST["achternaam"];
-    $wachtwoord = $_POST["wachtwoord"];
-    $leeftijd = $_POST["leeftijd"];
-    $lengte = $_POST["lengte"];
+    function cleaning($raw_data) {
+        global $conn;
+        $data = mysqli_real_escape_string($conn, $raw_data);
+        return $data;
+    }
+
+    $voornaam = cleaning($_POST["voornaam"]);
+    $email = cleaning($_POST["email"]);
+    $achternaam = cleaning($_POST["achternaam"]);
+    $wachtwoord = cleaning($_POST["wachtwoord"]);
+    $leeftijd = cleaning($_POST["leeftijd"]);
+    $lengte = cleaning($_POST["lengte"]);
 
 
     $sql = "INSERT INTO `users` (`id`, `voornaam`, `leeftijd`, `achternaam`, `email`, `wachtwoord`, `lengte`) VALUES (NULL, '$voornaam', '$leeftijd', '$achternaam', '$email', '$wachtwoord', '$lengte');";
 
     mysqli_query($conn, $sql);
 
-    header("Location: ./index.php");
+    header("Location: ./read.php");
 
 ?>
