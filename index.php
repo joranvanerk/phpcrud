@@ -18,8 +18,6 @@
     <div class="col12">
     <div class="jumbotron jumbotron-fluid">
           <div class="container">
-            <h1 class="display-5">Mini-disco</h1>
-            <p class="lead">Geef jezelf op voor de mini-disco!</p>
           </div>
         </div>
     </div>
@@ -55,7 +53,6 @@
     </div>
     <div class="row">
         <div class="col12"></div>
-        <p>We zien je graag terug bij de mini-disco!</p>
     </div>
   </main>
 </form>
