@@ -1,5 +1,6 @@
 <?php
 
+    // database connectie opzetten
     include("connect_db.php");
 
     $id = intval($_GET["id"]);
